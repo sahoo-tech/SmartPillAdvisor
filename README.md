@@ -184,7 +184,7 @@ This project is licensed under the MIT License.
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- Yugendra N [@Yugenjr]
 
 ## 🙏 Acknowledgments
 

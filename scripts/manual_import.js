@@ -21,7 +21,7 @@ async function manualImport() {
     console.log(`📋 Existing records: ${existingCount.toLocaleString()}`);
 
     // Define CSV files
-    const csvDir = path.join(__dirname, 'ddinterpy');
+    const csvDir = path.join(__dirname, '..', 'ddinterpy');
     const csvFiles = [
       'ddinter_downloads_code_A.csv',
       'ddinter_downloads_code_B.csv',
