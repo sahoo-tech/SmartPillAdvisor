@@ -12,7 +12,7 @@ async function backupDatabase() {
     const db = client.db(process.env.DB_NAME);
 
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    const backupDir = path.join(__dirname, 'backups', timestamp);
+    const backupDir = path.join(__dirname, '..', 'backups', timestamp);
 
     // Create backup directory
     await fs.mkdir(backupDir, { recursive: true });
@@ -50,7 +50,7 @@ async function restoreFromBackup(backupTimestamp) {
     await client.connect();
     const db = client.db(process.env.DB_NAME);
 
-    const backupDir = path.join(__dirname, 'backups', backupTimestamp);
+    const backupDir = path.join(__dirname, '..', 'backups', backupTimestamp);
 
     // Check if backup exists
     try {

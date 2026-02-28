@@ -96,7 +96,7 @@ async function runImportManually() {
   const db = client.db(process.env.DB_NAME);
   const collection = db.collection('interactions');
 
-  const csvDir = path.join(__dirname, 'ddinterpy');
+  const csvDir = path.join(__dirname, '..', 'ddinterpy');
   const csvFiles = [
     'ddinter_downloads_code_A.csv',
     'ddinter_downloads_code_B.csv',
